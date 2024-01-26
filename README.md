@@ -68,5 +68,5 @@ OAI-ID | dc:description | dct:provenance | other tag
 ---|---|---|---
 record/header/identifier|record/metadata/olac:olac/dc:description|record/metadata/olac:olac/dct:provenance|record/metadata/olac:olac/dc*(provenance)
 
-For each record under `ListRecords` we want to match the content of `<record><header><identifier>` and one or more of: `<record><metadata><olac:olac><dct:provenance>` || `<record><metadata><olac:olac><dct:description>`
+For each record under `ListRecords` we want to match the content of `<record><header><identifier>` and one or more of: `<record><metadata><olac:olac><dct:provenance>` || `<record><metadata><olac:olac><dc:description>`
 
