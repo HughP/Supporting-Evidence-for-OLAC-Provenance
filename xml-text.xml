@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2021-07-08T09:42:05</responseDate>
+  <request verb="ListRecords" metadataPrefix="olac">
+        http://www.language-archives.org/cgi-bin/olac3.pl
+</request>
+  <ListRecords>
+    <record xmlns="http://www.openarchives.org/OAI/2.0/">
+      <header>
+        <identifier>oai:odin.csufresno.edu:AAE</identifier>
+        <datestamp>2007-06-27</datestamp>
+      </header>
+      <metadata>
+        <olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.0/ http://www.language-archives.org/OLAC/1.0/olac.xsd http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd">
+          <dc:title>Interlinear Glossed Text for Albanian, Arbëreshë</dc:title>
+          <dc:creator>Lewis, William</dc:creator>
+          <dc:subject xsi:type="olac:language"> Albanian, Arbëreshë</dc:subject>
+          <dc:description>A listing of Web resources containing Interlinear Glossed Text for the language Albanian, Arbëreshë: 1 document(s), 2 instance(s) of interlinear text.</dc:description>
+          <dc:publisher>California State University, Fresno, ODIN project</dc:publisher>
+          <dc:date>2007-06-27</dc:date>
+          <dc:identifier>http://www.csufresno.edu/odin/igt_urls.php?lang=AAE</dc:identifier>
+        </olac:olac>
+      </metadata>
+    </record>
+    <record xmlns="http://www.openarchives.org/OAI/2.0/">
+      <header>
+        <identifier>oai:odin.csufresno.edu:AAT</identifier>
+        <datestamp>2007-06-27</datestamp>
+      </header>
+      <metadata>
+        <olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.0/ http://www.language-archives.org/OLAC/1.0/olac.xsd http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd">
+          <dc:title>Interlinear Glossed Text for Albanian, Arvanitika</dc:title>
+          <dc:creator>Lewis, William</dc:creator>
+          <dc:subject xsi:type="olac:language"> Albanian, Arvanitika</dc:subject>
+          <dc:description>A listing of Web resources containing Interlinear Glossed Text for the language Albanian, Arvanitika: 1 document(s), 5 instance(s) of interlinear text.</dc:description>
+          <dc:publisher>California State University, Fresno, ODIN project</dc:publisher>
+          <dc:date>2007-06-27</dc:date>
+          <dc:identifier>http://www.csufresno.edu/odin/igt_urls.php?lang=AAT</dc:identifier>
+        </olac:olac>
+      </metadata>
+    </record>
+    <record xmlns="http://www.openarchives.org/OAI/2.0/">
+      <header>
+        <identifier>oai:odin.csufresno.edu:ABK</identifier>
+        <datestamp>2007-06-27</datestamp>
+      </header>
+      <metadata>
+        <olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.0/ http://www.language-archives.org/OLAC/1.0/olac.xsd http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd">
+          <dc:title>Interlinear Glossed Text for Abkhaz</dc:title>
+          <dc:creator>Lewis, William</dc:creator>
+          <dc:subject xsi:type="olac:language"> Abkhaz</dc:subject>
+          <dc:description>A listing of Web resources containing Interlinear Glossed Text for the language Abkhaz: 7 document(s), 10 instance(s) of interlinear text.</dc:description>
+          <dc:publisher>California State University, Fresno, ODIN project</dc:publisher>
+          <dc:date>2007-06-27</dc:date>
+          <dc:identifier>http://www.csufresno.edu/odin/igt_urls.php?lang=ABK</dc:identifier>
+        </olac:olac>
+      </metadata>
+    </record>
+    <record xmlns="http://www.openarchives.org/OAI/2.0/">
+      <header>
+        <identifier>oai:sil.org:89806</identifier>
+        <datestamp>2021-07-07</datestamp>
+      </header>
+      <metadata>
+        <olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+          <dc:title>Paranan language lessons</dc:title>
+          <dcterms:spatial xsi:type="dcterms:ISO3166">PH</dcterms:spatial>
+          <dc:date xsi:type="dcterms:W3CDTF">1980</dc:date>
+          <dc:description xsi:type="dcterms:URI">https://www.sil.org/resources/archives/89806</dc:description>
+          <dcterms:extent>74 pages</dcterms:extent>
+          <dc:language olac:code="eng" xsi:type="olac:language"/>
+          <dc:language olac:code="prf" xsi:type="olac:language"/>
+          <dc:subject olac:code="prf" xsi:type="olac:language"/>
+          <dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+        </olac:olac>
+      </metadata>
+    </record>
+    <record xmlns="http://www.openarchives.org/OAI/2.0/">
+      <header>
+        <identifier>oai:hp3.me:001</identifier>
+        <datestamp>2024-07-07</datestamp>
+      </header>
+      <metadata>
+        <olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+          <dc:title>No Provenance Yes Description</dc:title>
+          <dcterms:spatial xsi:type="dcterms:ISO3166">PH</dcterms:spatial>
+          <dc:date xsi:type="dcterms:W3CDTF">1980</dc:date>
+          <dc:description>Some Description</dc:description>
+          <dcterms:extent>74 pages</dcterms:extent>
+          <dc:language olac:code="eng" xsi:type="olac:language"/>
+          <dc:language olac:code="prf" xsi:type="olac:language"/>
+          <dc:subject olac:code="prf" xsi:type="olac:language"/>
+          <dc:subject>Provenance</dc:subject>
+          <dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+        </olac:olac>
+      </metadata>
+    </record>
+    <record xmlns="http://www.openarchives.org/OAI/2.0/">
+      <header>
+        <identifier>oai:hp3.me:002</identifier>
+        <datestamp>2024-07-07</datestamp>
+      </header>
+      <metadata>
+        <olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+          <dc:title>Yes Provenance Yes Description</dc:title>
+          <dcterms:spatial xsi:type="dcterms:ISO3166">PH</dcterms:spatial>
+          <dc:date xsi:type="dcterms:W3CDTF">1980</dc:date>
+          <dc:description>Some Description</dc:description>
+          <dcterms:extent>74 pages</dcterms:extent>
+          <dc:language olac:code="eng" xsi:type="olac:language"/>
+          <dc:language olac:code="prf" xsi:type="olac:language"/>
+          <dc:subject olac:code="prf" xsi:type="olac:language"/>
+          <dc:subject>Provenance</dc:subject>
+          <dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+          <dcterms:provenance>Fonds du Musée de la parole et du geste (Exposition coloniale internationale 1931)</dcterms:provenance>
+        </olac:olac>
+      </metadata>
+    </record>
+    <record xmlns="http://www.openarchives.org/OAI/2.0/">
+      <header>
+        <identifier>oai:hp3.me:002</identifier>
+        <datestamp>2024-07-07</datestamp>
+      </header>
+      <metadata>
+        <olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+          <dc:title>Yes Provenance No Description</dc:title>
+          <dcterms:spatial xsi:type="dcterms:ISO3166">PH</dcterms:spatial>
+          <dc:date xsi:type="dcterms:W3CDTF">1980</dc:date>
+          <dcterms:extent>74 pages</dcterms:extent>
+          <dc:language olac:code="eng" xsi:type="olac:language"/>
+          <dc:language olac:code="prf" xsi:type="olac:language"/>
+          <dc:subject olac:code="prf" xsi:type="olac:language"/>
+          <dc:subject>Provenance</dc:subject>
+          <dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+          <dcterms:provenance>Fonds du Musée de la parole et du geste (Exposition coloniale internationale 1931)</dcterms:provenance>
+        </olac:olac>
+      </metadata>
+    </record>
+    <record xmlns="http://www.openarchives.org/OAI/2.0/">
+      <header>
+        <identifier>oai:hp3.me:004</identifier>
+        <datestamp>2024-07-07</datestamp>
+      </header>
+      <metadata>
+        <olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+          <dc:title>No Provenance No Description</dc:title>
+          <dcterms:spatial xsi:type="dcterms:ISO3166">PH</dcterms:spatial>
+          <dc:date xsi:type="dcterms:W3CDTF">1980</dc:date>
+          <dcterms:extent>74 pages</dcterms:extent>
+          <dc:language olac:code="eng" xsi:type="olac:language"/>
+          <dc:language olac:code="prf" xsi:type="olac:language"/>
+          <dc:subject olac:code="prf" xsi:type="olac:language"/>
+          <dc:subject>Provenance</dc:subject>
+          <dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+        </olac:olac>
+      </metadata>
+    </record>
+  </ListRecords>
+</OAI-PMH>
