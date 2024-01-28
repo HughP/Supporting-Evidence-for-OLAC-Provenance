@@ -76,3 +76,18 @@ record/header/identifier|record/metadata/olac:olac/dc:description|record/metadat
 
 For each record under `ListRecords` we want to match the content of `<record><header><identifier>` and one or more of: `<record><metadata><olac:olac><dct:provenance>` || `<record><metadata><olac:olac><dc:description>`
 
+
+
+## Indirect indications of Provenance
+
+There are two other ways to deduce that provenace should have some record in it. The first is through roles. The second is through relations.
+
+For example, several roles can be indicated through a record (See OLAC Roles and MARC Roles). Roles come in different classes, first there are creator roles, second there are cutorial and augmentor roles, and third there are instutional roles. For example, a creator role might be "videographer" while an augmentor role might be "production manager", "principle investigator", "researher". Finally an instutional role might be "depositor". 
+
+By understanding the creation narrative of unique artifacts we might come to learn that someone created something (e.g., a recording). Then a second party collected their works when they retired. This second person is the "collector" or "assembler". Then the work, as part of a collection was turned over to a stewardship organization. From the organization's perspective then the "depositer" is indicated. So here we have some indication of a chain of custody. This should be part of the proveonance statement.
+
+The second indirect method is though relations. Several relations exist. For example, dc:source might have information indicating a source reource. In this kind of situation we can surmize something about the creation event and the delta between the source artifact and the current artifact. The articulation of this detal is part of the provenance narrative. Source is not the only relationship. For example, the relationships dct:replaces, dct:isreplacedby, should also come with provenance statements related to deltas. 
+
+In a different sense if we look at dct:isVersionOf, dct:hasVersion, dct:isFormatOf, and dct:hasFormat these relationships are indicitive of Expression and Manifestation changes. In these cases a provenace statement fitting to the explination of how they related to the work or another Expression or Manifestation is fitting.
+
+OLAC Role Application Recomendation
