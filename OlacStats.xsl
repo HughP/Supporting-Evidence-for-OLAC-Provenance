@@ -23,9 +23,23 @@
             <head>
                 <title>Provenance Record Count</title>
                 <style type="text/css">
+                    able {
+                    border-collapse: collapse;
+                    }
+                    
                     tr {
-                        padding: 2px 5px;
-                        margin: 2px 5px;}
+                    padding: 2px 5px;
+                    margin: 2px 5px;}
+                    td {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    }
+                    th {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    }
                     .tg {
                         border-collapse: collapse;
                         border-spacing: 0;
