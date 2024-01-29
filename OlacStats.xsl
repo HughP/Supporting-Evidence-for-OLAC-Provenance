@@ -418,6 +418,28 @@
                 </table> 
                 
                 <h1 id="dates">Dates</h1>
+                                                                              <h2 id="dctmodified">Use of the dcterms:created element</h2>
+                <p>Raw count of 'dcterms:created' statements: <xsl:value-of select="count(//dcterms:created)"/></p>
+                <p>Records with dcterms:created: <xsl:value-of select="count(//oai:record[descendant::dcterms:created])"/></p>
+                <h3>Records by Data-Provider with dcterms:created</h3>
+                                           <table id="tg-v6yyn" class="tg">
+                <thead>
+                <tr>
+                <td>Data Provider</td>
+                <td>Created Date Element Count</td>
+                <td>Example Record ID</td>
+                </tr>
+                </thead>
+                <tbody>
+                    <xsl:for-each-group select="//oai:record[descendant::dcterms:created]" group-by="tokenize(./oai:header/oai:identifier, ':')[2]">
+                 <tr>
+                 <td class="tg-0pky"><xsl:value-of select="current-grouping-key()"/></td>
+                <td class="tg-0pky"><xsl:value-of select="count(current-group())"/></td>
+                <td class="tg-0pky"><xsl:value-of select="current-group()[1]/descendant::oai:identifier/text()"/></td>
+                </tr>
+                </xsl:for-each-group>
+                </tbody>
+                </table> 
                                                                      <h2 id="dctmodified">Use of the dcterms:modified element</h2>
                 <p>Raw count of 'dcterms:modified' statements: <xsl:value-of select="count(//dcterms:modified)"/></p>
                 <p>Records with dcterms:modified: <xsl:value-of select="count(//oai:record[descendant::dcterms:modified])"/></p>
