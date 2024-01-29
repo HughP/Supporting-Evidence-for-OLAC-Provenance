@@ -124,7 +124,7 @@ A third kind of relationship is the references relationship. Some descriptions r
 
 ### Dates
 
-The namespace dcterms, upon which OLAC is built, has a variety of date options wihin it. Dates in heritily infer an event and the type of date within dcterms imputs a semantics upon that event. Those dates relevent to the provenance discussion are: dct:modified, dct:dateAccepted, and dct:dateSubmitted.
+The namespace dcterms, upon which OLAC is built, has a variety of date options wihin it. Dates in heritily infer an event and the type of date within dcterms imputs a semantics upon that event. Those dates relevent to the provenance discussion are: dct:created, dct:modified, dct:dateAccepted, and dct:dateSubmitted.
 
 
 ### accrualMethod
