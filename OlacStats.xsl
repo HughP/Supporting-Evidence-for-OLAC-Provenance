@@ -124,9 +124,14 @@
                     .selected {
                         background-color: rgb(33, 126, 255);
                         color: rgb(255, 255, 255);
+                    }
+                    h1 {
+                      margin: 3.1rem 0 0.2rem 0 ;
+                      font-size: 2.2em;
                     }</style>
             </head>
             <body>
+
                 <xsl:variable name="records">
                     <xsl:for-each select="./oai:record">
                         <!-- Apply templates to process the current record, including the custom template for oai:metadata -->
@@ -158,7 +163,7 @@
                     /></p>
                 <h2 id="dp">Data Providers</h2>
                 <h3>Records by Data-Provider</h3>
-                <table>
+                <table id="tg-THkt9" class="tg">
                     <thead>
                         <tr>
                             <td class="tg-0pky">Data Provider</td>
@@ -228,7 +233,7 @@
                     </thead>
                     <tbody>
 
-                        <xsl:for-each-group select="$records/oai:record[descendant::dc:provenance]"
+                        <xsl:for-each-group select="$records/oai:record[descendant::dcterms:provenance]"
                             group-by="./*:provider">
                             <xsl:sort select="count(current-group())" data-type="number"
                                 order="descending"/>
