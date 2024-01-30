@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.0/" version="2.0">
 
     <xsl:output method="xml" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
         doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" indent="yes"/>
@@ -10,7 +10,7 @@
 
     <xsl:template match="node() | @*" mode="copy">
         <xsl:copy>
-            <xsl:apply-templates mode="copy"/>
+            <xsl:apply-templates select="@* | node()" mode="copy"/>
         </xsl:copy>
     </xsl:template>
 
@@ -156,6 +156,8 @@
                     <a class="links" href="#dccreatore">Creator Element</a>
                     <a class="links" href="#dccrd">Depositor Role</a>
                 </div>
+                <h2>Example Attribute</h2>
+                <p>Records wirh a dc:language with an olac:code of 'eng': <xsl:value-of select="count($records/oai:record[descendant::dc:language[1][attribute::*:code = 'eng']])"/></p>
                 <h2>Record Counts</h2>
                 <p>Raw count of 'record' elements: <xsl:value-of select="count($records/oai:record)"
                     /></p>
