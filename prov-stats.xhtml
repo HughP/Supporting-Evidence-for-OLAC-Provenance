@@ -8,14 +8,17 @@
    <head>
       <title>Provenance Record Count</title>
       <style type="text/css">
-                    able {
+                    table {
                     border-collapse: collapse;
                     }
                     
                     tr {
                     padding: 2px 5px;
-                    margin: 2px 5px;}
+                    margin: 2px 5px;
+                    }
                     td {
+                    margin: 2px 5px;
+                    padding: 2px 5px;
                     border-color: black;
                     border-style: solid;
                     border-width: 1px;
@@ -111,7 +114,7 @@
                         color: rgb(255, 255, 255);
                     }
                     h1 {
-                      margin: 1.1rem 0 0.5rem 0 ;
+                      margin: 3.1rem 0 0.2rem 0 ;
                       font-size: 2.2em;
                     }</style>
    </head>
@@ -133,7 +136,7 @@
       <p>Raw count of 'record' elements: 443217</p>
       <h2 id="dp">Data Providers</h2>
       <h3>Records by Data-Provider</h3>
-      <table>
+      <table id="tg-THkt9" class="tg">
          <thead>
             <tr>
                <td class="tg-0pky">Data Provider</td>
@@ -559,11 +562,11 @@
       </table>
       <h2>Total number of Data-Providers</h2>
       <p>59</p>
-      <h2 id="dcpe">Use of the dc:provenance element</h2>
+      <h2 id="dcpe">Use of the dcterms:provenance element</h2>
       <p>Raw count of 'dcterms:provenance': 1823</p>
       <p>Records with dcterms:provenance: 533</p>
       <p>Records with empty provenance: 0</p>
-      <h3>Records by Data-Provider with dcterms:provenance***</h3>
+      <h3>Records by Data-Provider with dcterms:provenance</h3>
       <table>
          <thead>
             <tr>
@@ -989,6 +992,33 @@
             </tr>
          </tbody>
       </table>
+      <p>Records with 'dc:subject' mentioning provenance: 37</p>
+      <h3>Records by Data-Provider with dc:subject mentioning provenance</h3>
+      <table>
+         <thead>
+            <tr>
+               <td>Data Provider</td>
+               <td>Count</td>
+               <td>Example Record ID</td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="tg-0pky">crdo.vjf.cnrs.fr</td>
+               <td class="tg-0pky">36</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:crdo.vjf.cnrs.fr:cocoon-fb673eac-6b27-3c5a-8326-57167aab7fc8">oai:crdo.vjf.cnrs.fr:cocoon-fb673eac-6b27-3c5a-8326-57167aab7fc8</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">scholarspace.manoa.hawaii.edu</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:scholarspace.manoa.hawaii.edu:10125/24883">oai:scholarspace.manoa.hawaii.edu:10125/24883</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
       <h2 id="dcde">Use of the dc:description element</h2>
       <p>Raw count of 'dc:description' statements: 551722</p>
       <p>Records with dc:description: 301231</p>
@@ -1371,6 +1401,75 @@
                <td class="tg-0pky">1</td>
                <td class="tg-0pky">
                   <a href="http://www.language-archives.org/item/oai:THDL.virginia.edu:All">oai:THDL.virginia.edu:All</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <p>Records with 'dc:description' mentioning provenance: 13</p>
+      <h3>Records by Data-Provider with dc:description mentioning provenance</h3>
+      <table>
+         <thead>
+            <tr>
+               <td>Data Provider</td>
+               <td>Count</td>
+               <td>Example Record ID</td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="tg-0pky">crdo.vjf.cnrs.fr</td>
+               <td class="tg-0pky">4</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:crdo.vjf.cnrs.fr:cocoon-d38e38ca-e05e-35b3-9042-b023cceec3d3">oai:crdo.vjf.cnrs.fr:cocoon-d38e38ca-e05e-35b3-9042-b023cceec3d3</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">soas.ac.uk</td>
+               <td class="tg-0pky">3</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:soas.ac.uk:MPI1228539">oai:soas.ac.uk:MPI1228539</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">anla.uaf.edu</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:anla.uaf.edu:KO898J1900j">oai:anla.uaf.edu:KO898J1900j</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">scholarspace.manoa.hawaii.edu</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:scholarspace.manoa.hawaii.edu:10125/25360">oai:scholarspace.manoa.hawaii.edu:10125/25360</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">www.ldc.upenn.edu</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:www.ldc.upenn.edu:LDC2018S10">oai:www.ldc.upenn.edu:LDC2018S10</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">cla.berkeley.edu</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:cla.berkeley.edu:Teeter.012">oai:cla.berkeley.edu:Teeter.012</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">paradisec.org.au</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:paradisec.org.au:IF01-024">oai:paradisec.org.au:IF01-024</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">dspace-clarin-it.ilc.cnr.it</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/OPEN-550">oai:dspace-clarin-it.ilc.cnr.it:20.500.11752/OPEN-550</a>
                </td>
             </tr>
          </tbody>
