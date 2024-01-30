@@ -23,14 +23,17 @@
             <head>
                 <title>Provenance Record Count</title>
                 <style type="text/css">
-                    able {
+                    table {
                     border-collapse: collapse;
                     }
                     
                     tr {
                     padding: 2px 5px;
-                    margin: 2px 5px;}
+                    margin: 2px 5px;
+                    }
                     td {
+                    margin: 2px 5px;
+                    padding: 2px 5px;
                     border-color: black;
                     border-style: solid;
                     border-width: 1px;
@@ -208,15 +211,15 @@
                 <p>
                     <xsl:value-of select="count($groups/*:group)"/>
                 </p>
-                <h2 id="dcpe">Use of the dc:provenance element</h2>
+                <h2 id="dcpe">Use of the dcterms:provenance element</h2>
                 <p>Raw count of 'dcterms:provenance': <xsl:value-of
                         select="count(//dcterms:provenance)"/></p>
                 <p>Records with dcterms:provenance: <xsl:value-of
                         select="count($records/oai:record[descendant::dcterms:provenance])"/></p>
                 <p>Records with empty provenance: <xsl:value-of
-                        select="count($records/oai:record[descendant::dc:provenance[not(text()) or normalize-space(text()) = '']])"
+                        select="count($records/oai:record[descendant::dcterms:provenance[not(text()) or normalize-space(text()) = '']])"
                     /></p>
-                <h3>Records by Data-Provider with dcterms:provenance***</h3>
+                <h3>Records by Data-Provider with dcterms:provenance</h3>
 
                 <table>
                     <thead>
@@ -228,7 +231,7 @@
                     </thead>
                     <tbody>
 
-                        <xsl:for-each-group select="$records/oai:record[descendant::dc:provenance]"
+                        <xsl:for-each-group select="$records/oai:record[descendant::dcterms:provenance]"
                             group-by="./*:provider">
                             <xsl:sort select="count(current-group())" data-type="number"
                                 order="descending"/>
@@ -295,7 +298,44 @@
                         </xsl:for-each-group>
                     </tbody>
                 </table>
-
+                <p>Records with 'dc:subject' mentioning provenance: <xsl:value-of
+                    select="count($records/oai:record[descendant::dc:subject[contains(lower-case(./text()), 'provenance')]])"/></p>
+                <h3>Records by Data-Provider with dc:subject mentioning provenance</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Data Provider</td>
+                            <td>Count</td>
+                            <td>Example Record ID</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <xsl:for-each-group select="$records/oai:record[descendant::dc:subject[contains(lower-case(./text()), 'provenance')]]"
+                            group-by="./*:provider">
+                            <xsl:sort select="count(current-group())" data-type="number"
+                                order="descending"/>
+                            <tr>
+                                <td class="tg-0pky">
+                                    <xsl:value-of select="current-grouping-key()"/>
+                                </td>
+                                <td class="tg-0pky">
+                                    <xsl:value-of select="count(current-group())"/>
+                                </td>
+                                <td class="tg-0pky">
+                                    <xsl:element name="a">
+                                        <xsl:attribute name="href"
+                                            >http://www.language-archives.org/item/<xsl:value-of
+                                                select="current-group()[1]/descendant::oai:identifier/text()"
+                                            /></xsl:attribute>
+                                        <xsl:value-of
+                                            select="current-group()[1]/descendant::oai:identifier/text()"
+                                        />
+                                    </xsl:element>
+                                </td>
+                            </tr>
+                        </xsl:for-each-group>
+                    </tbody>
+                </table>
                 <h2 id="dcde">Use of the dc:description element</h2>
                 <p>Raw count of 'dc:description' statements: <xsl:value-of
                         select="count(//dc:description)"/></p>
@@ -326,6 +366,44 @@
                                     <xsl:element name="a">
                                         <xsl:attribute name="href"
                                                 >http://www.language-archives.org/item/<xsl:value-of
+                                                select="current-group()[1]/descendant::oai:identifier/text()"
+                                            /></xsl:attribute>
+                                        <xsl:value-of
+                                            select="current-group()[1]/descendant::oai:identifier/text()"
+                                        />
+                                    </xsl:element>
+                                </td>
+                            </tr>
+                        </xsl:for-each-group>
+                    </tbody>
+                </table>
+                <p>Records with 'dc:description' mentioning provenance: <xsl:value-of
+                    select="count($records/oai:record[descendant::dc:description[contains(lower-case(./text()), 'provenance')]])"/></p>
+                <h3>Records by Data-Provider with dc:description mentioning provenance</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Data Provider</td>
+                            <td>Count</td>
+                            <td>Example Record ID</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <xsl:for-each-group select="$records/oai:record[descendant::dc:description[contains(lower-case(./text()), 'provenance')]]"
+                            group-by="./*:provider">
+                            <xsl:sort select="count(current-group())" data-type="number"
+                                order="descending"/>
+                            <tr>
+                                <td class="tg-0pky">
+                                    <xsl:value-of select="current-grouping-key()"/>
+                                </td>
+                                <td class="tg-0pky">
+                                    <xsl:value-of select="count(current-group())"/>
+                                </td>
+                                <td class="tg-0pky">
+                                    <xsl:element name="a">
+                                        <xsl:attribute name="href"
+                                            >http://www.language-archives.org/item/<xsl:value-of
                                                 select="current-group()[1]/descendant::oai:identifier/text()"
                                             /></xsl:attribute>
                                         <xsl:value-of
@@ -571,7 +649,7 @@
                 <h2>Count of records with dcterms:provenance</h2>
                 <p>
                     <xsl:value-of
-                        select="count($records/oai:record/descendant::dcterms:provenance[1]/ancestor::oai:record)"
+                        select="count($records/oai:record[descendant::dcterms:provenance[1]])"
                     />
                 </p>
                 <h3>Sorted by Data-Provider </h3>
@@ -585,7 +663,7 @@
                     </thead>
                     <tbody>
                         <xsl:for-each-group
-                            select="$records/oai:record/descendant::dcterms:provenance[1]/ancestor::oai:record"
+                            select="$records/oai:record[descendant::dcterms:provenance[1]]"
                             group-by="./*:provider">
                             <xsl:sort select="count(current-group())" data-type="number"
                                 order="descending"/>
