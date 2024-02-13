@@ -6,6 +6,7 @@ Initial exploration of the data was done using the 8 July 2021 dataset. Publicat
 I had to update my GB allocation to RAM by using:
 `export _JAVA_OPTIONS="-Xmx12g"`
 and then to check it `java -XshowSettings:vm `
+and then to generate the stats: `saxonb-xslt -xsl:OlacStats.xsl -s:ListRecords-20210718.xml -o:prov-stats.xhtml `
 
 ## Informatic tasks
 
