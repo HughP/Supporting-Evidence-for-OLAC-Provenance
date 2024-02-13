@@ -1,6 +1,11 @@
 # Supporting-Evidence-for-OLAC-Provenance
-This repository contains the data and the methods for querying the data related to the OLAC Provenance paper
+This repository contains the data and the methods for querying the data related to the OLAC Provenance paper.
 
+Initial exploration of the data was done using the 8 July 2021 dataset. Publication version used the 18 July 2021 data set. (https://zenodo.org/records/5112131)
+
+I had to update my GB allocation to RAM by using:
+`export _JAVA_OPTIONS="-Xmx12g"`
+and then to check it `java -XshowSettings:vm `
 
 ## Informatic tasks
 
@@ -10,7 +15,8 @@ I make the statement: There were **X** records in the data set. I based this on 
 
 `grep -n -i '<record xmlns=' ListRecords-20210708.xml | wc -l`
 
-result: 443,217
+result 8 July: 443,217
+result 18 July: 443,458
 
 <hr>
 
@@ -22,9 +28,15 @@ To make a rough and dirty extraction I used:
 
 `grep -n -i -C 0 'dcterms:provenance' ListRecords-20210708.xml | wc -l > list-of-provenance-statements.txt`
 
+`grep -n -i -C 0 'dcterms:provenance' ListRecords-20210718.xml | wc -l > list-of-provenance-statements-18.txt`
+
+results 18 July: 2924
+
 This file cuts off multi-line instances a slightly better line, which splits on the end tag is:
 
 `grep -n -i -C 0 '/dcterms:provenance' ListRecords-20210708.xml | wc -l > list-of-provenance-statements.txt` 
+
+`grep -n -i -C 0 '/dcterms:provenance' ListRecords-20210718.xml | wc -l > list-of-provenance-statements.txt` 
 
 Both solutions report 2924 lines with "provenance". This is a bit confusing because of the numbers in the following section.
 
@@ -35,7 +47,8 @@ For the claim that there are **X** number of references within the XML file to t
 
 `grep -n -i Provenance ListRecords-20210708.xml | wc -l`
 
-result: 1876
+result 8 July: 1876
+result 18 July: 1876
 
 53 instances of the word "provenance" occurs in elements across the records which are not in the '<dct:provenance> element. These occurred in the following:
 
@@ -51,7 +64,7 @@ If I parsed things correctly, which I think I have, there should be 1823 instanc
 	1. On how many individual records do these elements appear?
 	2. And then on how many records with a <dc:description> element also have a <dct:provance> element? That is which data providers are aware of both and using both elements?
 
-There appears to be 551,722 uses of the dc:description element. This was found out by using the following line.
+There appears to be 551,722 uses of the dc:description element (8 July). This was found out by using the following line.
 
 `grep -i '/dc:description' ListRecords-20210708.xml | wc -l`
 
@@ -101,7 +114,7 @@ By understanding the creation narrative of unique artifacts we might come to lea
 `grep -n -i -C 25 'olac:code="collector"' ListRecords-20210708.xml | wc -l`
 0
 
-`$ /mnt/files/OLAC-Collections$ grep -n -i -C 0 'collect' ListRecords-20210708.xml | wc -l`
+`grep -n -i -C 0 'collect' ListRecords-20210708.xml | wc -l`
 111995
 
 
@@ -114,11 +127,13 @@ The second indirect method is though relations. Several relations exist. For exa
 
 In a different sense if we look at dct:isVersionOf, dct:hasVersion, dct:isFormatOf, and dct:hasFormat these relationships are indicative of Expression and Manifestation changes. In these cases a provenance statement fitting to the explanation of how they related to the work or another Expression or Manifestation is fitting.
 
-`$ /mnt/files/OLAC-Collections$ grep -n -i -C 0 'hasversion' ListRecords-20210708.xml | wc -l`
-7538
+`grep -n -i -C 0 'hasversion' ListRecords-20210708.xml | wc -l`
+result 8 July: 7538
+result 18 July: 7548
 
-`$ /mnt/files/OLAC-Collections$ grep -n -i -C 0 'hasformat' ListRecords-20210708.xml | wc -l`
-520
+`grep -n -i -C 0 'hasformat' ListRecords-20210708.xml | wc -l`
+result 8 July: 520
+result 18 July: 522
 
 A third kind of relationship is the references relationship. Some descriptions reference an accession records. Links to these accession Records even if they are not online are suitable to appear in the references section.
 
@@ -135,21 +150,25 @@ Since reciving is a provenance action then there is a reasonable expectation the
 `grep -n -i 'accession' ListRecords-20210708.xml`
 
 
-`/mnt/files/OLAC-Collections$ grep -n -i -C 0 '/dcterms:provenance' ListRecords-20210708.xml | wc -l`
+`grep -n -i -C 0 '/dcterms:provenance' ListRecords-20210708.xml | wc -l`
 
 2924
 
-`$ /mnt/files/OLAC-Collections$ grep -n -i -C 0 'dcterms:source' ListRecords-20210708.xml | wc -l`
-0
+` grep -n -i -C 0 'dcterms:source' ListRecords-20210708.xml | wc -l`
+result 8 July: 0
+result 18 July: 0
 
-`$ /mnt/files/OLAC-Collections$ grep -n -i -C 0 'dc:source' ListRecords-20210708.xml | wc -l`
-6023
+`grep -n -i -C 0 'dc:source' ListRecords-20210708.xml | wc -l`
+result 8 July: 6023
+result 18 July: 6023
 
-`$ /mnt/files/OLAC-Collections$ grep -n -i -C 0 'replacedby' ListRecords-20210708.xml | wc -l`
-2323
+`grep -n -i -C 0 'replacedby' ListRecords-20210708.xml | wc -l`
+result 8 July: 2323
+result 18 July: 2329
 
-`$ /mnt/files/OLAC-Collections$ grep -n -i -C 0 'replaces' ListRecords-20210708.xml | wc -l`
-6521
+`grep -n -i -C 0 'replaces' ListRecords-20210708.xml | wc -l`
+result 8 July: 6521
+result 18 July: 6521
 
 
 
