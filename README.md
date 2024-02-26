@@ -12,9 +12,11 @@ I had to update my GB allocation to RAM by using:
 and then to check it `java -XshowSettings:vm `
 and then to generate the stats: `saxonb-xslt -xsl:OlacStats.xsl -s:ListRecords-20210718.xml -o:prov-stats.xhtml `
 
-# Research Questions
+## Research Questions
 
 The basic approach and research questions can be seen in the document `Research-Questions.md`
 
-Credits: And Back's work can be seen on a different branch. Matt Lee's work is on the main branch and is most of the XSLT.
+## Credits
+
+Andy Back's work can be seen on a different branch. Matt Lee's work is on the main branch and is most of the XSLT.
 
