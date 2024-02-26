@@ -2,7 +2,7 @@
 This repository contains the data and the methods for querying the data related to the OLAC Provenance paper.
 
 ## Record sourcing
-Illustrative records for the paper can be found at `OLAC-Example-Records/`. There are four records. Three are from the 18 July 2021 data set, the other is from the 10 August 2011 data set. Records contain the date of their last harvest in thier names and internally in the XML.
+Illustrative records for the paper can be found at `OLAC-Example-Records/`. There are four records. Three are from the 18 July 2021 data set, the other is from the 10/11 August 2011 data set (https://doi.org/10.5281/zenodo.7223348). Records contain the date of their last harvest in thier names and internally in the XML.
 
 ## Usage
 Initial exploration of the data was done using the 8 July 2021 dataset. Publication version used the 18 July 2021 data set. (https://zenodo.org/records/5112131)
