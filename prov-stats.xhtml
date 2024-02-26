@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns:oai="http://www.openarchives.org/OAI/2.0/"
-      xmlns="http://www.w3.org/1999/xhtml"
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:oai="http://www.openarchives.org/OAI/2.0/"
       xmlns:dcterms="http://purl.org/dc/terms/"
-      xmlns:dc="http://purl.org/dc/elements/1.1/">
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:olac="http://www.language-archives.org/OLAC/1.0/">
    <head>
       <title>Provenance Record Count</title>
       <style type="text/css">
@@ -132,6 +133,12 @@
          <a class="links" href="#dccreatore">Creator Element</a>
          <a class="links" href="#dccrd">Depositor Role</a>
       </div>
+      <h2>Example Attribute</h2>
+      <p>Records wirh a dc:language with an olac:code of 'eng': 74755</p>
+      <p>Records wirh a dc:contributor with an olac:code of 'sponsor': 264</p>
+      <p>Records wirh a dc:contributor with an olac:code of 'collector': 0</p>
+      <p>Records wirh a dc:contributor with an olac:code of 'compiler': 47496</p>
+      <p>Records wirh a dc:contributor with an olac:code of 'depositor': 12079</p>
       <h2>Record Counts</h2>
       <p>Raw count of 'record' elements: 443458</p>
       <h2 id="dp">Data Providers</h2>
@@ -566,6 +573,331 @@
       <p>Raw count of 'dcterms:provenance': 1823</p>
       <p>Records with dcterms:provenance: 533</p>
       <p>Records with empty provenance: 0</p>
+      <h3 id="dccrd"> Records by depositor role</h3>
+      <table>
+         <thead>
+            <tr>
+               <td>Data Provider</td>
+               <td>Count</td>
+               <td>Example Record ID</td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="tg-0pky">crdo.vjf.cnrs.fr</td>
+               <td class="tg-0pky">10722</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:crdo.vjf.cnrs.fr:cocoon-b317a5da-45dd-3e43-bbf3-0a3fcb8befb6">oai:crdo.vjf.cnrs.fr:cocoon-b317a5da-45dd-3e43-bbf3-0a3fcb8befb6</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">soas.ac.uk</td>
+               <td class="tg-0pky">832</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:soas.ac.uk:MPI1090489">oai:soas.ac.uk:MPI1090489</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">scholarspace.manoa.hawaii.edu</td>
+               <td class="tg-0pky">230</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:scholarspace.manoa.hawaii.edu:10125/40832">oai:scholarspace.manoa.hawaii.edu:10125/40832</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">aseda.aiatsis.gov.au</td>
+               <td class="tg-0pky">147</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:aseda.aiatsis.gov.au:0001">oai:aseda.aiatsis.gov.au:0001</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">www.mpi.nl</td>
+               <td class="tg-0pky">84</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:www.mpi.nl:lat_1839_00_0000_0000_0015_1D7D_C">oai:www.mpi.nl:lat_1839_00_0000_0000_0015_1D7D_C</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">sldr.org</td>
+               <td class="tg-0pky">39</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:sldr.org:prax000933">oai:sldr.org:prax000933</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">humlab.lu.se</td>
+               <td class="tg-0pky">18</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:humlab.lu.se:hdl:10050/00-0000-0000-0004-1EA7-5">oai:humlab.lu.se:hdl:10050/00-0000-0000-0004-1EA7-5</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">anla.uaf.edu</td>
+               <td class="tg-0pky">6</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:anla.uaf.edu:HA964MC1964">oai:anla.uaf.edu:HA964MC1964</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">mulce.org</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:mulce.org:mce-simu-forum-all">oai:mulce.org:mce-simu-forum-all</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <h3> Records by contributor role</h3>
+      <table>
+         <thead>
+            <tr>
+               <td>Data Provider</td>
+               <td>Count</td>
+               <td>Example Record ID</td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="tg-0pky">www.mpi.nl</td>
+               <td class="tg-0pky">70464</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:www.mpi.nl:lat_1839_037A5280_DA25_44C4_9C1E_D087D7A53F3C">oai:www.mpi.nl:lat_1839_037A5280_DA25_44C4_9C1E_D087D7A53F3C</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">soas.ac.uk</td>
+               <td class="tg-0pky">67304</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:soas.ac.uk:MPI1080633">oai:soas.ac.uk:MPI1080633</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">sil.org</td>
+               <td class="tg-0pky">46311</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:sil.org:292">oai:sil.org:292</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">paradisec.org.au</td>
+               <td class="tg-0pky">23031</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:paradisec.org.au:AA1-001">oai:paradisec.org.au:AA1-001</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">crdo.vjf.cnrs.fr</td>
+               <td class="tg-0pky">16259</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:crdo.vjf.cnrs.fr:cocoon-234554c3-0450-3684-b5d7-941a7565cddd">oai:crdo.vjf.cnrs.fr:cocoon-234554c3-0450-3684-b5d7-941a7565cddd</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">cla.berkeley.edu</td>
+               <td class="tg-0pky">14582</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:cla.berkeley.edu:AA.001">oai:cla.berkeley.edu:AA.001</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">humlab.lu.se</td>
+               <td class="tg-0pky">11596</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:humlab.lu.se:hdl:10050/00-0000-0000-0003-CF17-F">oai:humlab.lu.se:hdl:10050/00-0000-0000-0003-CF17-F</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">scholarspace.manoa.hawaii.edu</td>
+               <td class="tg-0pky">6152</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:scholarspace.manoa.hawaii.edu:10125/5087">oai:scholarspace.manoa.hawaii.edu:10125/5087</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">linguistlist.org</td>
+               <td class="tg-0pky">5489</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:linguistlist.org:lang_aaa">oai:linguistlist.org:lang_aaa</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">rosettaproject.org</td>
+               <td class="tg-0pky">4941</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:rosettaproject.org:ConstructionalPolysemyAndMentalSpacesInPotawatomiDiscourse">oai:rosettaproject.org:ConstructionalPolysemyAndMentalSpacesInPotawatomiDiscourse</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">pacific.library.manoa.hawaii.edu</td>
+               <td class="tg-0pky">3568</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:pacific.library.manoa.hawaii.edu:7589">oai:pacific.library.manoa.hawaii.edu:7589</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">espace.cdu.edu.au</td>
+               <td class="tg-0pky">3460</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:espace.cdu.edu.au:cdu:43171">oai:espace.cdu.edu.au:cdu:43171</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">gial.edu</td>
+               <td class="tg-0pky">2809</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:gial.edu:114">oai:gial.edu:114</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">acl.sr.language-archives.org</td>
+               <td class="tg-0pky">2799</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:acl.sr.language-archives.org:A00-1001">oai:acl.sr.language-archives.org:A00-1001</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">crubadan.org</td>
+               <td class="tg-0pky">2228</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:crubadan.org:aae">oai:crubadan.org:aae</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">anla.uaf.edu</td>
+               <td class="tg-0pky">1596</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:anla.uaf.edu:AL825V1840d">oai:anla.uaf.edu:AL825V1840d</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">ota.ahds.ac.uk</td>
+               <td class="tg-0pky">1263</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:ota.ahds.ac.uk:0001">oai:ota.ahds.ac.uk:0001</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">transnewguinea.org</td>
+               <td class="tg-0pky">964</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:transnewguinea.org:abg.1173">oai:transnewguinea.org:abg.1173</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">www.ldc.upenn.edu</td>
+               <td class="tg-0pky">890</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:www.ldc.upenn.edu:LDC2000S85">oai:www.ldc.upenn.edu:LDC2000S85</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">aseda.aiatsis.gov.au</td>
+               <td class="tg-0pky">679</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:aseda.aiatsis.gov.au:0001">oai:aseda.aiatsis.gov.au:0001</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">www.lapsyd.ddl.ish-lyon.cnrs.fr</td>
+               <td class="tg-0pky">595</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:www.lapsyd.ddl.ish-lyon.cnrs.fr:src86">oai:www.lapsyd.ddl.ish-lyon.cnrs.fr:src86</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">lindat.mff.cuni.cz</td>
+               <td class="tg-0pky">372</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:lindat.mff.cuni.cz:11372/LRT-174">oai:lindat.mff.cuni.cz:11372/LRT-174</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">sldr.org</td>
+               <td class="tg-0pky">261</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:sldr.org:blri-000943">oai:sldr.org:blri-000943</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">BAS.repo</td>
+               <td class="tg-0pky">53</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:BAS.repo:Corpora/SK-Public/SK-Public">oai:BAS.repo:Corpora/SK-Public/SK-Public</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">mulce.org</td>
+               <td class="tg-0pky">49</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:mulce.org:mce.simu.all.all">oai:mulce.org:mce.simu.all.all</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">tst-centrale.org</td>
+               <td class="tg-0pky">45</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:tst-centrale.org:10">oai:tst-centrale.org:10</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">talkbank.org</td>
+               <td class="tg-0pky">10</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:talkbank.org:Password-Business">oai:talkbank.org:Password-Business</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">childes.talkbank.org</td>
+               <td class="tg-0pky">8</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:childes.talkbank.org:Biling-Ticio">oai:childes.talkbank.org:Biling-Ticio</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">langdoc.uni-bielefeld.de</td>
+               <td class="tg-0pky">7</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:langdoc.uni-bielefeld.de:UBI-EGA-001">oai:langdoc.uni-bielefeld.de:UBI-EGA-001</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">TDProject.sr.language-archives.org</td>
+               <td class="tg-0pky">6</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:TDProject.sr.language-archives.org:agreement">oai:TDProject.sr.language-archives.org:agreement</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">sinica.edu.tw</td>
+               <td class="tg-0pky">3</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:sinica.edu.tw:Formosan">oai:sinica.edu.tw:Formosan</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">surrey.smg.surrey.ac.uk</td>
+               <td class="tg-0pky">2</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:surrey.smg.surrey.ac.uk:syncretism">oai:surrey.smg.surrey.ac.uk:syncretism</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">mbcarrom.linguistlist.org</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:mbcarrom.linguistlist.org:371">oai:mbcarrom.linguistlist.org:371</a>
+               </td>
+            </tr>
+            <tr>
+               <td class="tg-0pky">languagecommons.org</td>
+               <td class="tg-0pky">1</td>
+               <td class="tg-0pky">
+                  <a href="http://www.language-archives.org/item/oai:languagecommons.org:Manx-Gaelic-Irish-lexicon-2011-06-24">oai:languagecommons.org:Manx-Gaelic-Irish-lexicon-2011-06-24</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
       <h3>Records by Data-Provider with dcterms:provenance</h3>
       <table>
          <thead>

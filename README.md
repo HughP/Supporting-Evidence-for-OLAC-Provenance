@@ -1,6 +1,10 @@
 # Supporting-Evidence-for-OLAC-Provenance
 This repository contains the data and the methods for querying the data related to the OLAC Provenance paper.
 
+## Record sourcing
+Illustrative records for the paper can be found at `OLAC-Example-Records/`. There are four records. Three are from the 18 July 2021 data set, the other is from the 10 August 2011 data set. Records contain the date of their last harvest in thier names and internally in the XML.
+
+## Usage
 Initial exploration of the data was done using the 8 July 2021 dataset. Publication version used the 18 July 2021 data set. (https://zenodo.org/records/5112131)
 
 I had to update my GB allocation to RAM by using:
@@ -8,7 +12,9 @@ I had to update my GB allocation to RAM by using:
 and then to check it `java -XshowSettings:vm `
 and then to generate the stats: `saxonb-xslt -xsl:OlacStats.xsl -s:ListRecords-20210718.xml -o:prov-stats.xhtml `
 
-## Informatic tasks
+## Initial Exploration and questions asked
+
+### Record Counts
 
 I need to answer the following question: _How many Records are in the data set?_
 
@@ -107,18 +113,20 @@ By understanding the creation narrative of unique artifacts we might come to lea
 `grep -n -i -C 25 'olac:code="depositor"' ListRecords-20210708.xml`
 
 `grep -n -i -C 25 'depositor' ListRecords-20210708.xml | wc -l`
+
 1457196
 
 `grep -n -i -C 25 'olac:code="depositor"' ListRecords-20210708.xml | wc -l`
+
 1332776
 
 `grep -n -i -C 25 'olac:code="collector"' ListRecords-20210708.xml | wc -l`
+
 0
 
 `grep -n -i -C 0 'collect' ListRecords-20210708.xml | wc -l`
+
 111995
-
-
 
 ### Relations
 
@@ -129,10 +137,12 @@ The second indirect method is though relations. Several relations exist. For exa
 In a different sense if we look at dct:isVersionOf, dct:hasVersion, dct:isFormatOf, and dct:hasFormat these relationships are indicative of Expression and Manifestation changes. In these cases a provenance statement fitting to the explanation of how they related to the work or another Expression or Manifestation is fitting.
 
 `grep -n -i -C 0 'hasversion' ListRecords-20210708.xml | wc -l`
+
 result 8 July: 7538
 result 18 July: 7548
 
 `grep -n -i -C 0 'hasformat' ListRecords-20210708.xml | wc -l`
+
 result 8 July: 520
 result 18 July: 522
 
@@ -156,21 +166,51 @@ Since reciving is a provenance action then there is a reasonable expectation the
 2924
 
 ` grep -n -i -C 0 'dcterms:source' ListRecords-20210708.xml | wc -l`
+
 result 8 July: 0
 result 18 July: 0
 
 `grep -n -i -C 0 'dc:source' ListRecords-20210708.xml | wc -l`
+
 result 8 July: 6023
 result 18 July: 6023
 
 `grep -n -i -C 0 'replacedby' ListRecords-20210708.xml | wc -l`
+
 result 8 July: 2323
 result 18 July: 2329
 
 `grep -n -i -C 0 'replaces' ListRecords-20210708.xml | wc -l`
+
 result 8 July: 6521
 result 18 July: 6521
 
+### Roles
 
+Get a list of the differnt roles used in the data set:
 
-OLAC Role Application Recomendation
+`grep -n -i -C 0 'olac:role' ListRecords-20210718.xml > OLAC-roles.txt`
+
+`cat OLAC-roles.txt | sort -u | cut -d " " -f 2 | sort | uniq -c > OLAC-role-distribution.txt`
+
+This might be self selecting to only OLAC roles. Another query may try to use only the contributor element.
+
+there seemed to be 17 malformed role lines
+
+Due to the way roles are applied there needs to be an OLAC Role Application Recomendation so that roles are clearly appled consistently.
+
+<hr>
+
+## Residue Questions
+
+I wonder how many of these records were created or harvested prior to 2004 when provenance became an element.
+
+If provenace and no dcmi type count
+If provenance and if one dcmitype, count for each different dcmi type
+If provenance and more than one dcmityp in record, count records
+If provenance and more than one format in record, count records
+
+how do I do two lines: (a join statement) and how do I do get the values of the content?
+			<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+
+I want to know if the item with provenance are collections, undeclared, plurals, or items (and which items).

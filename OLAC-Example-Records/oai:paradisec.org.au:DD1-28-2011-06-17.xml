@@ -1,0 +1,28 @@
+<record>
+	<header>
+		<identifier> oai:paradisec.org.au:DD1-028 </identifier>
+		<datestamp> 2011-06-17 </datestamp>
+	</header>
+	<metadata>
+		<olac:olac
+			xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+			<dc:contributor olac:code="researcher" xsi:type="olac:role"> Don Daniels </dc:contributor>
+			<dc:coverage xsi:type="dcterms:ISO3166"> PG </dc:coverage>
+			<dc:date xsi:type="dcterms:W3CDTF"> 2010-07-01 </dc:date>
+			<dc:created xsi:type="dcterms:W3CDTF"> 2010-07-01 </dc:created>
+			<dc:description> The FLEx database the Akukem project. [Filename] Akukem 2011-05-25 1632.zip. Language as given: Akukem </dc:description>
+			<dc:tableOfContents> DD1-028-Akukem.xml </dc:tableOfContents>
+			<dc:format> Digitised: yes; </dc:format>
+			<dc:identifier> DD1-028 </dc:identifier>
+			<dc:identifier xsi:type="dcterms:URI"> http://paradisec.org.au/repository/DD1/028 </dc:identifier>
+			<dc:bibliographicCitation> Don Daniels (researcher) 2010; Akukem FLEx file, XML http://paradisec.org.au/repository/DD1/028 2011-07-10 </dc:bibliographicCitation>
+			<dc:language olac:code="eng" xsi:type="olac:language"/>
+			<dc:language olac:code="tpi" xsi:type="olac:language"/>
+			<dc:rights> no restrictions </dc:rights>
+			<dc:accessRights> no restrictions </dc:accessRights>
+			<dc:subject olac:code="language_documentation" xsi:type="olac:linguistic-field"/>
+			<dc:subject olac:code="spm" xsi:type="olac:language"/>
+			<dc:title> Akukem FLEx file </dc:title>
+		</olac:olac>
+	</metadata>
+</record>

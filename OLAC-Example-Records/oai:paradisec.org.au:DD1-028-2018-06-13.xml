@@ -1,0 +1,35 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/">
+	<header>
+		<identifier>oai:paradisec.org.au:DD1-028</identifier>
+		<datestamp>2018-06-13</datestamp>
+	</header>
+	<metadata>
+		<olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+			<dc:contributor olac:code="compiler" xsi:type="olac:role">Don Daniels</dc:contributor>
+			<dc:contributor olac:code="researcher" xsi:type="olac:role">Don Daniels</dc:contributor>
+			<dc:coverage xsi:type="dcterms:ISO3166">PG</dc:coverage>
+			<dc:coverage xsi:type="dcterms:Box">northlimit=-4.183; southlimit=-4.303; westlimit=144.759; eastlimit=144.859</dc:coverage>
+			<dc:date xsi:type="dcterms:W3CDTF">2010-07-01</dc:date>
+			<dcterms:created xsi:type="dcterms:W3CDTF">2010-07-01</dcterms:created>
+			<dc:description>The FLEx database for the Akukem project. [Filename] Akukem 2014-06-18 1052.fwbackup. Language as given: Akukem</dc:description>
+			<dcterms:tableOfContents xsi:type="dcterms:URI">http://catalog.paradisec.org.au/repository/DD1/028/DD1-028-Akukem.xml</dcterms:tableOfContents>
+			<dcterms:tableOfContents xsi:type="dcterms:URI">http://catalog.paradisec.org.au/repository/DD1/028/DD1-028-01.fwbackup</dcterms:tableOfContents>
+			<dc:format>Digitised: no</dc:format>
+			<dc:identifier>DD1-028</dc:identifier>
+			<dc:identifier xsi:type="dcterms:URI">http://catalog.paradisec.org.au/repository/DD1/028</dc:identifier>
+			<dcterms:bibliographicCitation>Don Daniels (collector), Don Daniels (researcher), 2010. Akukem FLEx file. XML/ZIP.  DD1-028 at catalog.paradisec.org.au. https://dx.doi.org/10.4225/72/56F00E43981AD</dcterms:bibliographicCitation>
+			<dc:language olac:code="eng" xsi:type="olac:language"/>
+			<dc:language olac:code="tpi" xsi:type="olac:language"/>
+			<dc:rights>Open (subject to agreeing to PDSC access conditions)</dc:rights>
+			<dcterms:accessRights>Open (subject to agreeing to PDSC access conditions)</dcterms:accessRights>
+			<dc:subject olac:code="language_documentation" xsi:type="olac:linguistic-field"/>
+			<dc:subject olac:code="spm" xsi:type="olac:language"/>
+			<dc:subject olac:code="language_documentation" xsi:type="olac:linguistic-field"/>
+			<dc:title>Akukem FLEx file</dc:title>
+			<dc:type olac:code="language_description" xsi:type="olac:linguistic-type"/>
+			<dc:type xsi:type="dcterms:DCMIType">Dataset</dc:type>
+			<dc:type xsi:type="dcterms:DCMIType">Software</dc:type>
+		</olac:olac>
+	</metadata>
+</record>
+
