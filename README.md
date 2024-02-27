@@ -18,5 +18,5 @@ The basic approach and research questions can be seen in the document `Research-
 
 ## Credits
 
-Andy Black's work can be seen on a different branch. Matt Lee's work is on the main branch and is most of the XSLT.
+[Andy Black](https://scholar.google.com/citations?user=YlzrXQUAAAAJ&hl=en)'s work can be seen on a different branch. [Matthew Lee](https://mattgyverlee.github.io)'s work is on the main branch and is most of the XSLT (see git log).
 
